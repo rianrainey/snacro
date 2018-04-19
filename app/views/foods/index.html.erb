@@ -1,0 +1,11 @@
+<h1 class="ui header">Welcome</h1>
+
+<%= form_tag('/calculate') do %>
+  <input name="snacks" type="hidden">
+  <div class="default text">Snacks</div>
+  <div class="menu">
+    <%= select_tag 'food', options_from_collection_for_select(@foods, 'id', 'name'), class: 'ui fluid search dropdown' %>
+  </div>
+
+  <button class="positive ui button">Submit</button>
+<% end %>

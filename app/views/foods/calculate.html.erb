@@ -1,0 +1,8 @@
+<h1 class="ui header">How Many Calories?</h1>
+
+<!-- Accordion of exercises. When expanded, shows how many minutes -->
+
+<% @exercises.each do |exercise| %>
+  <%= exercise.name %>
+  <%= exercise.calculate_minutes(@food_id) %> minutes
+<% end %>
