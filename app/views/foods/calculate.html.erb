@@ -1,4 +1,4 @@
-<h1 class="ui header">How Long To Burn <%= @calories %> Calories?</h1>
+<h1 class="ui header">How Long To Burn <%= @calories %> calories of <%= @food.name %>?</h1>
 
 <!-- Accordion of exercises. When expanded, shows how many minutes -->
 
@@ -6,7 +6,7 @@
   <% @exercises.each do |exercise| %>
     <div class="title"><%= exercise.name %></div>
     <div class="content">
-      <%= exercise.calculate_minutes(@food_id) %> minutes
+      <%= exercise.calculate_minutes(@food.id) %> minutes
     </div>
   <% end %>
 </div>
