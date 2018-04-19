@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
 
+gem 'rails_12factor', group: :production
+
 
 
 group :development, :test do
